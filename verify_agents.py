@@ -1,7 +1,7 @@
 import os
 import sys
 
-# Add project root to path
+# Добавление корня проекта в путь поиска модулей
 sys.path.append(os.getcwd())
 
 from moslicenzia.agents.agent1_reception.agent import ReceptionAgent
@@ -31,14 +31,14 @@ def test_pipeline():
             
         print(f"\nProcessing: {filename}")
         
-        # 1. Classification
+        # 1. Классификация
         res1 = reception.classify_document(path)
         print(f"Agent 1 (Classifier): {res1.status} - {res1.data.get('doc_type') if res1.data else res1.comment}")
         
         if res1.data and "doc_type" in res1.data:
             doc_type = res1.data["doc_type"]
             
-            # 2. Parsing
+            # 2. Парсинг
             res2 = parser.parse(doc_type, path)
             print(f"Agent 2 (Parser): {res2.status}")
             if res2.data:

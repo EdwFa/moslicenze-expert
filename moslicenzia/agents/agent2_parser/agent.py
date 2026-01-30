@@ -5,8 +5,8 @@ from moslicenzia.schemas.models import DocType, AgentResult, ValidationStatus
 
 class ParserAgent:
     """
-    Agent 2: Structured Data Parser (XML).
-    Extracts key fields from normalized XML documents.
+    Агент 2: Парсер структурированных данных (XML).
+    Извлекает ключевые поля из нормализованных XML-документов.
     """
     
     def parse(self, doc_type: DocType, file_path: str) -> AgentResult:
@@ -42,7 +42,7 @@ class ParserAgent:
             )
 
     def _parse_application(self, root: ET._Element) -> Dict:
-        # Based on "Заявление о выдаче лицензии.xml"
+        # На основе "Заявление о выдаче лицензии.xml"
         ns = {"ns": "http://asguf.mos.ru/rkis_gu/coordinate/v6_1/"}
         
         declarant = root.find(".//ns:BaseDeclarant", namespaces=ns)
@@ -54,7 +54,7 @@ class ParserAgent:
         name = declarant.findtext("ns:FullName", namespaces=ns)
         
         objects = []
-        # Separate divisions list
+        # Список обособленных подразделений
         for div in root.xpath(".//*[local-name()='separate_division']"):
             objects.append({
                 "address": div.findtext(".//pobox") or div.findtext(".//street"),
@@ -70,7 +70,7 @@ class ParserAgent:
         }
 
     def _parse_egrul(self, root: ET._Element) -> Dict:
-        # EGRUL XML uses attributes for INN/KPP
+        # XML ЕГРЮЛ использует атрибуты для ИНН/КПП
         sv_ul_list = root.xpath(".//*[local-name()='СвЮЛ']")
         if not sv_ul_list:
             return {}
@@ -79,7 +79,7 @@ class ParserAgent:
         inn = sv_ul.get("ИНН")
         kpp = sv_ul.get("КПП")
         
-        # Name is in СвНаимЮЛ/@НаимЮЛПолн
+        # Имя находится в СвНаимЮЛ/@НаимЮЛПолн
         name_elem_list = root.xpath(".//*[local-name()='СвНаимЮЛ']")
         name = name_elem_list[0].get("НаимЮЛПолн") if name_elem_list else ""
             

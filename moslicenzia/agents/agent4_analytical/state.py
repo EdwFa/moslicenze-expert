@@ -5,7 +5,7 @@ from moslicenzia.schemas.models import AgentResult, ValidationStatus
 
 class ExpertiseState(TypedDict):
     """
-    Graph state for the preliminary expertise process.
+    Состояние графа для процесса предварительной экспертизы.
     """
     application_id: str
     documents: List[Dict[str, str]]  # List of {path, type}

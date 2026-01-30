@@ -39,8 +39,8 @@ REPORT_TEMPLATE = """
 
 class ReportGeneratorAgent:
     """
-    Agent 5: Report Generator.
-    Produces formal documents based on findings from Agent 4.
+    Агент 5: Генератор отчетов.
+    Создает официальные документы на основе выводов Агента 4.
     """
     def generate_text_report(self, state: Dict[str, Any]) -> str:
         extracted = state.get("extracted_data", {})
@@ -64,7 +64,7 @@ class ReportGeneratorAgent:
         try:
             report_text = self.generate_text_report(state)
             
-            # In a real app, this might save a PDF or send to a database
+            # В реальном приложении здесь может происходить сохранение в PDF или отправка в базу данных
             return AgentResult(
                 agent_id="agent_5",
                 doc_id=state.get("application_id", "Unknown"),

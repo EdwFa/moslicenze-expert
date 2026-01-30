@@ -6,7 +6,7 @@ def verify_full_pipeline():
     orchestrator = AnalyticalOrchestrator()
     
     docs_dir = "moslicenzia/data/application_docs"
-    # List of documents to process in one batch (one application)
+    # Список документов для обработки в одном пакете (одно заявление)
     documents = [
         {"path": os.path.join(docs_dir, "Заявление о выдаче лицензии.xml")},
         {"path": os.path.join(docs_dir, "Выписка из ЕГРЮЛ по запросам органов государственной власти (СМЭВ 3).xml")},
@@ -30,9 +30,9 @@ def verify_full_pipeline():
     print("\n--- Final Decision Draft ---")
     print(result["decision_draft"])
     
-    # Save result to a file for review
+    # Сохранение результата в файл для проверки
     with open("expertise_result_sample.json", "w", encoding="utf-8") as f:
-        # Filter agent_results for serialization (AgentResult is a pydantic model)
+        # Фильтрация результатов агентов для сериализации (AgentResult — это модель pydantic)
         serializable_result = {
             "application_id": result["application_id"],
             "overall_status": str(result["overall_status"]),

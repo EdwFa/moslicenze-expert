@@ -10,7 +10,7 @@ class DocType(str, Enum):
     RNIP_FINES = "RNIP_FINES"   # 5. РНиП (Штрафы)
     RNIP_DUTY = "RNIP_DUTY"     # 6. РНиП (Госпошлина)
     ROSREESTR = "ROSREESTR"     # 7. Росреестр
-    KPP_TAX = "KPP"             # 8. КПП
+    KPP_TAX = "KPP"             # 8. КПП (Налоги)
 
 class ValidationStatus(str, Enum):
     SUCCESS = "SUCCESS"

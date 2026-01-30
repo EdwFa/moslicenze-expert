@@ -4,10 +4,10 @@ import mcp.server.fastmcp as fastmcp
 from typing import Dict, Optional, Any, List
 import json
 
-# Initialize FastMCP server for Agent 6
+# Инициализация FastMCP сервера для Агента 6
 mcp_server = fastmcp.FastMCP("Agent6_FIAS")
 
-# Known endpoints to try in order
+# Известные эндпоинты для последовательной проверки
 FIAS_ENDPOINTS = [
     "https://fias.nalog.ru/Search/FullTextSearch",
     "https://fias.nalog.ru/Search/Search",
@@ -24,8 +24,8 @@ HEADERS = {
 
 async def search_fias_portal(address_query: str) -> Dict[str, Any]:
     """
-    Directly query the fias.nalog.ru portal for address suggestions.
-    Tries multiple endpoints and falls back to HTML parsing if needed.
+    Прямой запрос к порталу fias.nalog.ru для получения подсказок по адресу.
+    Пробует несколько эндпоинтов и переходит к парсингу HTML при необходимости.
     """
     try:
         async with httpx.AsyncClient(timeout=10.0, follow_redirects=True) as client:
@@ -48,9 +48,9 @@ async def search_fias_portal(address_query: str) -> Dict[str, Any]:
                 except Exception:
                     continue
 
-            # Fallback: Try to search via main Search page and parse HTML results
-            # This is slow and harder but very robust. 
-            # For now, if all API endpoints fail, we rely on the mock/failure logic.
+            # Fallback: Попытка поиска через основную страницу поиска и парсинг HTML-результатов
+            # Это медленно и сложнее, но очень надежно. 
+            # На данный момент, если все API-эндпоинты не срабатывают, мы полагаемся на логику моков/ошибок.
             return {"status": "NOT_FOUND", "comment": "All FIAS API endpoints returned 404 or invalid data."}
             
     except Exception as e:
@@ -59,13 +59,13 @@ async def search_fias_portal(address_query: str) -> Dict[str, Any]:
 @mcp_server.tool()
 async def check_address_fias(address_query: str) -> Dict[str, Any]:
     """
-    Search and validate address in FIAS/GAR by scraping fias.nalog.ru.
-    Returns normalized address, FIAS/GAR IDs, and validation status.
+    Поиск и валидация адреса в ФИАС/ГАР путем скрейпинга fias.nalog.ru.
+    Возвращает нормализованный адрес, ID ФИАС/ГАР и статус валидации.
     """
-    # Direct portal search
+    # Прямой поиск на портале
     result = await search_fias_portal(address_query)
     
-    # If direct search fails or returns nothing, check if it's a known sample for demo
+    # Если прямой поиск не дал результатов или вернул ошибку, проверяем, не является ли это известным примером для демо
     if result.get("status") in ["NOT_FOUND", "ERROR"]:
         mock_result = simulate_fias_check(address_query)
         if mock_result.get("status") == "VALID":
@@ -74,7 +74,7 @@ async def check_address_fias(address_query: str) -> Dict[str, Any]:
     return result
 
 def simulate_fias_check(address: str) -> Dict:
-    """Deterministic mock for sample addresses."""
+    """Детерминированный мок для тестовых адресов."""
     addr_lower = address.lower()
     if "автозаводская" in addr_lower and "18" in addr_lower:
         return {
@@ -88,9 +88,9 @@ def simulate_fias_check(address: str) -> Dict:
 
 @mcp_server.tool()
 async def get_subdivision_kpp(fias_id: str) -> Optional[str]:
-    """Retrieve KPP for a specific subdivision based on its FIAS location ID."""
-    # Simplified logic: in reality, this calls a federal tax gateway
-    # For now, we return a mock value that matches our samples
+    """Получение КПП для конкретного подразделения на основе его ID местоположения в ФИАС."""
+    # Упрощенная логика: в реальности это вызывает шлюз федеральной налоговой службы
+    # На данный момент возвращаем значение мока, соответствующее нашим примерам
     return "772501001" if "74d633f7" in fias_id else "772501001"
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ from datetime import datetime
 from moslicenzia.agents.agent4_analytical.agent import AnalyticalOrchestrator
 from moslicenzia.schemas.models import ValidationStatus
 
-# Page Config
+# Настройка страницы
 st.set_page_config(
     page_title="Moslicenzia AI Expert",
     page_icon="🛡️",
@@ -14,7 +14,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS for Premium Look
+# Пользовательский CSS для премиум-вида
 st.markdown("""
 <style>
     .main {
@@ -75,7 +75,7 @@ def main():
         if st.button("Очистить кэш"):
             st.rerun()
 
-    # Main Interface
+    # Основной интерфейс
     st.markdown("### 📥 Загрузка документов")
     uploaded_files = st.file_uploader(
         "Выберите XML файлы (Заявление, ЕГРЮЛ, ФНС, РНиП, Росреестр)", 
@@ -106,7 +106,7 @@ def main():
                         
                         status.update(label="Экспертиза завершена!", state="complete", expanded=False)
                         
-                        # Results Display
+                        # Отображение результатов
                         st.divider()
                         col1, col2, col3 = st.columns(3)
                         
@@ -123,7 +123,7 @@ def main():
                         with col3:
                             st.metric("Рекомендация", result["recommendation"])
 
-                        # Findings
+                        # Результаты проверок
                         st.markdown("### 🔍 Результаты проверок")
                         for finding in result["analysis_findings"]:
                             css_class = "success"
@@ -136,11 +136,11 @@ def main():
                             </div>
                             """, unsafe_allow_html=True)
 
-                        # Report
+                        # Отчет
                         st.markdown("### 📄 Итоговое заключение")
                         st.markdown(result['decision_draft'])
                         
-                        # Download Button
+                        # Кнопка скачивания
                         st.download_button(
                             label="⬇️ Скачать отчет (Markdown)",
                             data=result['decision_draft'],
@@ -169,7 +169,7 @@ def main():
                             result = orchestrator.run_expertise(doc_list, app_id="EXAMPLE-APP-001")
                             status.update(label="Экспертиза на примерах завершена!", state="complete", expanded=False)
                             
-                            # Results Display
+                            # Отображение результатов
                             st.divider()
                             col1, col2, col3 = st.columns(3)
                             
