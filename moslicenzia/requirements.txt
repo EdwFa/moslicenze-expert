@@ -1,0 +1,16 @@
+lxml
+beautifulsoup4
+pydantic
+sqlalchemy
+psycopg2-binary
+celery
+redis
+mcp
+httpx
+jinja2
+python-multipart
+python-dotenv
+ollama
+langgraph
+langchain-ollama
+pillow

@@ -1,0 +1,66 @@
+<Response xmlns="http://moslic.mos.ru">
+  <ns2:SenderProvidedResponseData xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.2" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.2" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" Id="CONS_9a4af9e2-efe0-11f0-b5f3-005056a3ae33">
+    <ns2:MessageID>a85bcdc4-1cf0-43f3-9bec-8373a878a7aa</ns2:MessageID>
+    <ns2:To>362df8</ns2:To>
+    <ns2:RequestRejected>
+      <ns2:RejectionReasonCode>NO_DATA</ns2:RejectionReasonCode>
+      <ns2:RejectionReasonDescription>Данные отсутствуют</ns2:RejectionReasonDescription>
+    </ns2:RequestRejected>
+    <ns2:Sender>
+      <ns2:Mnemonic>RNIP</ns2:Mnemonic>
+    </ns2:Sender>
+  </ns2:SenderProvidedResponseData>
+  <SenderProvidedRequestData xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.2" Id="authoritySignature">
+    <MessageID>877bac56-efe0-11f0-a349-005056b0d930</MessageID>
+    <NodeID>MSKS23</NodeID>
+    <MessagePrimaryContent xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.2">
+      <ExportChargesRequest xmlns="urn://rnip.mos.ru/xsd/services/export-charges/2.6.0" Id="A_877c485a-efe0-11f0-a349-005056b0d930" timestamp="2026-01-12T21:00:37" senderIdentifier="362df8" senderRole="16" external="true" includeTaxes="0">
+        <ChargesExportConditions xmlns="http://rnip.mos.ru/xsd/SearchConditions/2.6.0" kind="CHARGE">
+          <PayersConditions>
+            <PayerIdentifier>2009725189960772501001</PayerIdentifier>
+            <TimeInterval xmlns="http://rnip.mos.ru/xsd/Common/2.6.0" startDate="2024-01-01T00:00:00.000" endDate="2026-01-01T23:59:59.000"/>
+          </PayersConditions>
+        </ChargesExportConditions>
+      </ExportChargesRequest>
+    </MessagePrimaryContent>
+    <Sender>
+      <Mnemonic>362df8</Mnemonic>
+    </Sender>
+  </SenderProvidedRequestData>
+  <Empty>
+    <Text>По Вашему запросу получено 0 записей.</Text>
+  </Empty>
+  <Error>
+    <ErrorCode>0</ErrorCode>
+    <ErrorDescription>Сведения не найдены по запросу #877bac56-efe0-11f0-a349-005056b0d930 uuid# MessageId#a85bcdc4-1cf0-43f3-9bec-8373a878a7aa. Данные отсутствуют</ErrorDescription>
+  </Error>
+  <Signature>
+    <SerialNumber>19822921954230229906056720898925379045</SerialNumber>
+    <Publisher>Common Name: Федеральное казначейство; Organization: Казначейство России; Country: RU; Locality: г. Москва; Street Address: Большой Златоустинский переулок, д. 6, строение 1; 1.2.643.100.1: 1047797019830; 1.2.643.100.4: 7710568760; State/Province: 77 Москва; Email Address: uc_fk@roskazna.ru</Publisher>
+    <CustomPublisher>
+      <Element name="email_address">uc_fk@roskazna.ru</Element>
+      <Element name="state_or_province_name">77 Москва</Element>
+      <Element name="1.2.643.100.4">7710568760</Element>
+      <Element name="1.2.643.100.1">1047797019830</Element>
+      <Element name="street_address">Большой Златоустинский переулок, д. 6, строение 1</Element>
+      <Element name="locality_name">г. Москва</Element>
+      <Element name="country_name">RU</Element>
+      <Element name="organization_name">Казначейство России</Element>
+      <Element name="common_name">Федеральное казначейство</Element>
+    </CustomPublisher>
+    <Subject>Common Name: ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ; Email Address: msks87.gu@mos.ru; 1.2.643.100.4: 7710878000; 1.2.643.100.1: 1107746943347; Organization: ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ; Locality: Москва; Street Address: 1-й Красногвардейский проезд, дом 21, строение 1; State/Province: г. Москва; Country: RU</Subject>
+    <CustomSubject>
+      <Element name="country_name">RU</Element>
+      <Element name="state_or_province_name">г. Москва</Element>
+      <Element name="street_address">1-й Красногвардейский проезд, дом 21, строение 1</Element>
+      <Element name="locality_name">Москва</Element>
+      <Element name="organization_name">ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ</Element>
+      <Element name="1.2.643.100.1">1107746943347</Element>
+      <Element name="1.2.643.100.4">7710878000</Element>
+      <Element name="email_address">msks87.gu@mos.ru</Element>
+      <Element name="common_name">ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ</Element>
+    </CustomSubject>
+    <StartDate>2025-06-10 08:41:01+00:00</StartDate>
+    <EndDate>2026-09-03 08:41:01+00:00</EndDate>
+  </Signature>
+</Response>

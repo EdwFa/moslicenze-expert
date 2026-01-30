@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><ns4:CoordinateMessage xmlns:ns4="http://asguf.mos.ru/rkis_gu/coordinate/v6_1/" xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" xmlns:ns3="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:ns5="http://mos.ru/gu/status/027001/">
+  <ns4:CoordinateDataMessage>
+    <ns4:Service>
+      <ns4:RegNum>18231482</ns4:RegNum>
+      <ns4:RegDate>2026-01-09T15:03:22.001+03:00</ns4:RegDate>
+      <ns4:ServiceNumber>0001-9000120-027001-00001024/26</ns4:ServiceNumber>
+      <ns4:Responsible>
+        <ns4:LastName>оператор Портала</ns4:LastName>
+        <ns4:FirstName>оператор Портала</ns4:FirstName>
+        <ns4:MiddleName>оператор Портала</ns4:MiddleName>
+        <ns4:JobTitle>оператор Портала</ns4:JobTitle>
+        <ns4:Phone>+7 (495) 539-55-55</ns4:Phone>
+        <ns4:Email>cpgu@mos.ru</ns4:Email>
+      </ns4:Responsible>
+      <ns4:Department>
+        <ns4:Name>Департамент информационных технологий города Москвы</ns4:Name>
+        <ns4:Code>2043</ns4:Code>
+        <ns4:Inn>7710878000</ns4:Inn>
+        <ns4:Ogrn>1107746943347</ns4:Ogrn>
+        <ns4:RegDate>2019-09-12T00:00:00</ns4:RegDate>
+        <ns4:SystemCode>9300003</ns4:SystemCode>
+      </ns4:Department>
+      <ns4:CreatedByDepartment>
+        <ns4:Name>ПГУ</ns4:Name>
+        <ns4:Code>1</ns4:Code>
+        <ns4:Inn>7710878000</ns4:Inn>
+        <ns4:Ogrn>1107746943347</ns4:Ogrn>
+        <ns4:RegDate>2019-09-12T00:00:00</ns4:RegDate>
+        <ns4:SystemCode>1</ns4:SystemCode>
+      </ns4:CreatedByDepartment>
+      <ns4:OutputKind>Portal</ns4:OutputKind>
+      <ns4:PortalNum>156178271</ns4:PortalNum>
+    </ns4:Service>
+    <ns4:SignService Id="22acbfd4-5ad8-46bd-bfa3-70cbff2608cb">
+      <ns4:ServiceType>
+        <ns4:Code>027001</ns4:Code>
+        <ns4:Name>Лицензирование розничной продажи алкогольной продукции</ns4:Name>
+      </ns4:ServiceType>
+      <ns4:Contacts>
+        <ns4:BaseDeclarant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ns4:RequestAccount" Id="declarant">
+          <ns4:Type>Declarant</ns4:Type>
+          <ns4:FullName>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ПРОРЫВ"</ns4:FullName>
+          <ns4:Name>ООО "ПРОРЫВ"</ns4:Name>
+          <ns4:Ogrn>1257700344220</ns4:Ogrn>
+          <ns4:Inn>9725189960</ns4:Inn>
+          <ns4:Kpp>772501001</ns4:Kpp>
+          <ns4:PostalAddress>
+            <ns4:PostalCode>115280</ns4:PostalCode>
+            <ns4:Locality>Город Москва</ns4:Locality>
+            <ns4:Street>ул Автозаводская</ns4:Street>
+            <ns4:House>18</ns4:House>
+            <ns4:POBox>Город Москва, Улица Автозаводская Дом 18</ns4:POBox>
+            <ns4:Okato>45296559000</ns4:Okato>
+            <ns4:BTIBuildingCode>3811586</ns4:BTIBuildingCode>
+            <ns4:FiasCode>477afc3e-d062-4141-b136-8fc212f06e99</ns4:FiasCode>
+          </ns4:PostalAddress>
+          <ns4:BankName>АО "АЛЬФА-БАНК"</ns4:BankName>
+          <ns4:BankBik>044525593</ns4:BankBik>
+          <ns4:CorrAccount>30101810200000000593</ns4:CorrAccount>
+          <ns4:SetAccount>40702810002370027677</ns4:SetAccount>
+          <ns4:Phone>9266773517</ns4:Phone>
+          <ns4:EMail>m.golubeva@zms-msk.ru</ns4:EMail>
+          <ns4:OrganizationType>UL</ns4:OrganizationType>
+          <ns4:CorpId>6a7ca44b-ad8e-8708-2627-98876223153e</ns4:CorpId>
+          <ns4:SsoId>d40c7ca4-15cd-4b3b-8fae-261f19f5a23b</ns4:SsoId>
+        </ns4:BaseDeclarant>
+      </ns4:Contacts>
+      <ns4:Documents>
+        <ns4:ServiceDocument>
+          <ns4:DocKind>
+            <ns4:Code>7709</ns4:Code>
+            <ns4:Name>Иные документы</ns4:Name>
+          </ns4:DocKind>
+          <ns4:DocFiles>
+            <ns4:CoordinateFileReference>
+              <ns4:Id>7f26b137-5128-4b91-941a-e309104af833</ns4:Id>
+              <ns4:FileName>Платежное_поручение_№4_09.01.2026.pdf.zip</ns4:FileName>
+              <ns4:FileHash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ns4:CoordinateFileReference>
+            <ns4:CoordinateFileReference>
+              <ns4:Id>a725e75f-21b0-4bdc-b2b3-8461f20f174a</ns4:Id>
+              <ns4:FileName>Карточка+регистрации+ККТ.zip</ns4:FileName>
+              <ns4:FileHash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ns4:CoordinateFileReference>
+            <ns4:CoordinateFileReference>
+              <ns4:Id>7d8b8406-ca81-44c3-9479-84d7031fdf59</ns4:Id>
+              <ns4:FileName>req_preview.zip</ns4:FileName>
+              <ns4:FileHash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ns4:CoordinateFileReference>
+            <ns4:CoordinateFileReference>
+              <ns4:Id>09072e5e-c1f3-4b23-9895-d3b47f0fd4f5</ns4:Id>
+              <ns4:FileName>АКТ ПРИЕМА-ПЕРЕДАЧИ.pdf.zip</ns4:FileName>
+              <ns4:FileHash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ns4:CoordinateFileReference>
+            <ns4:CoordinateFileReference>
+              <ns4:Id>f0e5c147-ee0a-4147-b76d-27d7d148be3b</ns4:Id>
+              <ns4:FileName>ДА Прорыв ред. 25.08.2025_с (002).pdf.zip</ns4:FileName>
+              <ns4:FileHash xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+            </ns4:CoordinateFileReference>
+          </ns4:DocFiles>
+        </ns4:ServiceDocument>
+        <ns4:ServiceDocument>
+          <ns4:DocKind>
+            <ns4:Code>77103</ns4:Code>
+            <ns4:Name>Номер платежного поручения или Уникальный идентификатор платежа (УИП)</ns4:Name>
+          </ns4:DocKind>
+          <ns4:DocSubType>65000</ns4:DocSubType>
+          <ns4:DocNumber>4</ns4:DocNumber>
+          <ns4:DocDate>2026-01-09T00:00:00</ns4:DocDate>
+        </ns4:ServiceDocument>
+      </ns4:Documents>
+      <ns4:CustomAttributes>
+        <ServiceProperties>
+          <bank_kpp>770801001</bank_kpp>
+          <license_period>1</license_period>
+          <product>1</product>
+          <paid>1</paid>
+          <select_license>2</select_license>
+          <zayv_pod>1</zayv_pod>
+          <zayv_yavl>1</zayv_yavl>
+          <separate_divisionlist>
+            <separate_division>
+              <DocDate>2025-08-25</DocDate>
+              <DocNumber>С-005.1/Д2025</DocNumber>
+              <btibuildingcode>3811586</btibuildingcode>
+              <fiascode>477afc3e-d062-4141-b136-8fc212f06e99</fiascode>
+              <cadastral_number>77:05:0002002:4416</cadastral_number>
+              <ext_addition>этаж 3, Помещение I , пом. №237</ext_addition>
+              <house>18</house>
+              <law_rosreestr>1</law_rosreestr>
+              <locality>Город Москва</locality>
+              <name_unit>Стикс Ривьера</name_unit>
+              <object_type>8</object_type>
+              <pobox>Город Москва, Улица Автозаводская Дом 18</pobox>
+              <reason_code>772501001</reason_code>
+              <status_of_building>3</status_of_building>
+              <street>ул Автозаводская</street>
+            </separate_division>
+          </separate_divisionlist>
+        </ServiceProperties>
+      </ns4:CustomAttributes>
+    </ns4:SignService>
+  </ns4:CoordinateDataMessage>
+  <ns4:Files>
+    <ns4:CoordinateFile>
+      <ns4:Id>7f26b137-5128-4b91-941a-e309104af833</ns4:Id>
+      <ns4:FileIdInStore>7f26b137-5128-4b91-941a-e309104af833</ns4:FileIdInStore>
+      <ns4:StoreName>GU-DOCS</ns4:StoreName>
+      <ns4:FileName>Платежное_поручение_№4_09.01.2026.pdf.zip</ns4:FileName>
+    </ns4:CoordinateFile>
+    <ns4:CoordinateFile>
+      <ns4:Id>a725e75f-21b0-4bdc-b2b3-8461f20f174a</ns4:Id>
+      <ns4:FileIdInStore>a725e75f-21b0-4bdc-b2b3-8461f20f174a</ns4:FileIdInStore>
+      <ns4:StoreName>GU-DOCS</ns4:StoreName>
+      <ns4:FileName>Карточка+регистрации+ККТ.zip</ns4:FileName>
+    </ns4:CoordinateFile>
+    <ns4:CoordinateFile>
+      <ns4:Id>7d8b8406-ca81-44c3-9479-84d7031fdf59</ns4:Id>
+      <ns4:FileIdInStore>7d8b8406-ca81-44c3-9479-84d7031fdf59</ns4:FileIdInStore>
+      <ns4:StoreName>GU-DOCS</ns4:StoreName>
+      <ns4:FileName>req_preview.zip</ns4:FileName>
+    </ns4:CoordinateFile>
+    <ns4:CoordinateFile>
+      <ns4:Id>09072e5e-c1f3-4b23-9895-d3b47f0fd4f5</ns4:Id>
+      <ns4:FileIdInStore>09072e5e-c1f3-4b23-9895-d3b47f0fd4f5</ns4:FileIdInStore>
+      <ns4:StoreName>GU-DOCS</ns4:StoreName>
+      <ns4:FileName>АКТ ПРИЕМА-ПЕРЕДАЧИ.pdf.zip</ns4:FileName>
+    </ns4:CoordinateFile>
+    <ns4:CoordinateFile>
+      <ns4:Id>f0e5c147-ee0a-4147-b76d-27d7d148be3b</ns4:Id>
+      <ns4:FileIdInStore>f0e5c147-ee0a-4147-b76d-27d7d148be3b</ns4:FileIdInStore>
+      <ns4:StoreName>GU-DOCS</ns4:StoreName>
+      <ns4:FileName>ДА Прорыв ред. 25.08.2025_с (002).pdf.zip</ns4:FileName>
+    </ns4:CoordinateFile>
+  </ns4:Files>
+</ns4:CoordinateMessage>

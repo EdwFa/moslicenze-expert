@@ -1,0 +1,22 @@
+# Task: Moslicenzia Preliminary Expertise Subsystem (6-Agent System)
+
+- [x] Planning and Design
+  - [x] Analyze XML requirements for each document type
+  - [x] Create multi-agent implementation plan (including Orchestration) [x]
+- [x] Core Infrastructure
+  - [ ] Set up PostgreSQL, Redis, and Celery (Pending production deployment)
+  - [x] Set up document storage folder (`moslicenzia/data/application_docs`)
+  - [x] Implement Agent 1: Reception and Classification
+  - [x] Implement Agent 6: MCP FIAS Integrator (Dadata API + Smart Mock)
+- [ ] Agent Implementation
+  - [x] Implement Agent 2: Structured Data Parser (XML/XSD)
+  - [ ] Implement Agent 3: Unstructured Doc Processor (OCR+LLM) [DEFERRED]
+  - [x] Implement Agent 4: Analytical Engine (Orchestrator via LangGraph)
+  - [x] Implement Agent 5: Report Generator (Markdown localized to RU)
+- [x] User Interface
+  - [x] Create Streamlit Dashboard (Premium UI)
+  - [x] Support file uploads and processing
+  - [x] Add "Run on Examples" functionality
+- [x] Integration and Verification
+  - [x] End-to-end pipeline testing (Success)
+  - [x] Localization to Russian (Findings, Reports, UI)

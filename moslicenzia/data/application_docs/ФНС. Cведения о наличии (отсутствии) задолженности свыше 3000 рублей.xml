@@ -1,0 +1,5 @@
+<CustomViewData RequestId="609b1c6e-f03c-11f0-820e-005056b0d930">
+  <ns2:XmlView xmlns:ns2="http://asguf.mos.ru/rkis_gu/coordinate/v6_1/">
+    <tns:INFZDLResponse xmlns:tns="urn://x-artefacts-fns-infzdl/root/310-70/4.0.0" ИдЗапрос="609b1c6e-f03c-11f0-820e-005056b0d930" ПрЗадолж="0"/>
+  </ns2:XmlView>
+</CustomViewData>

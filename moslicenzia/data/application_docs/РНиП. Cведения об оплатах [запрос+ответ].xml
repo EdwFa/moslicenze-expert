@@ -1,0 +1,81 @@
+<Response xmlns="http://moslic.mos.ru">
+  <ns2:SenderProvidedResponseData xmlns:ns2="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.2" xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.2" xmlns:ns11="urn://rnip.mos.ru/xsd/services/export-payments/2.6.0" xmlns:ns20="http://rnip.mos.ru/xsd/Payment/2.6.0" xmlns:ns4="http://rnip.mos.ru/xsd/Common/2.6.0" xmlns:ns5="http://rnip.mos.ru/xsd/Organization/2.6.0" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" Id="CONS_828ce355-f03c-11f0-ad15-005056a3ae33">
+    <ns2:MessageID>b1bdaeac-af46-4798-8b27-73eb3d511456</ns2:MessageID>
+    <ns2:To>362df8</ns2:To>
+    <MessagePrimaryContent>
+      <ns11:ExportPaymentsResponse Id="I_7a0d2fde-cbcd-b391-590a-4d3a39c0d4bc" RqId="A_61cf61a8-f03c-11f0-820e-005056b0d930" hasMore="false" recipientIdentifier="362df8" timestamp="2026-01-13T07:58:32.635+03:00">
+        <ns11:PaymentInfo amount="6500000" kbk="80910807082011000110" oktmo="45380000" paymentDate="2026-01-09T14:07:57.000+03:00" paymentId="10445255930000000901202620954597" purpose="Государственная пошлина за совершение действий, связанных с лицензированием" receiptDate="2026-01-09+03:00" supplierBillID="0" transKind="01">
+          <ns20:PaymentOrg>
+            <ns5:Bank bik="044525593"/>
+          </ns20:PaymentOrg>
+          <ns20:Payer payerIdentifier="2009725189960772501001" payerName="ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ 'ПРОРЫВ'"/>
+          <ns5:Payee inn="7710881420" kpp="770301001" name="УФК по г. Москве (ДТИУ ГОРОДА МОСКВЫ л/счет 04732809000)">
+            <ns4:OrgAccount accountNumber="03100643000000017300">
+              <ns4:Bank bik="004525988" correspondentBankAccount="40102810545370000003"/>
+            </ns4:OrgAccount>
+          </ns5:Payee>
+          <ns20:BudgetIndex paytReason="0" status="08" taxDocDate="0" taxDocNumber="0" taxPeriod="0"/>
+          <ns20:AccDoc accDocDate="2026-01-09+03:00" accDocNo="4"/>
+          <ns4:ChangeStatus meaning="1"/>
+          <ns11:IncomeInfo receiptIncomeStatus="0"/>
+        </ns11:PaymentInfo>
+      </ns11:ExportPaymentsResponse>
+    </MessagePrimaryContent>
+    <ns2:Sender>
+      <ns2:Mnemonic>RNIP</ns2:Mnemonic>
+    </ns2:Sender>
+  </ns2:SenderProvidedResponseData>
+  <SenderProvidedRequestData xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/1.2" Id="authoritySignature">
+    <MessageID>61cf4056-f03c-11f0-820e-005056b0d930</MessageID>
+    <NodeID>MSKS23</NodeID>
+    <MessagePrimaryContent xmlns="urn://x-artefacts-smev-gov-ru/services/message-exchange/types/basic/1.2">
+      <ExportPaymentsRequest xmlns="urn://rnip.mos.ru/xsd/services/export-payments/2.6.0" Id="A_61cf61a8-f03c-11f0-820e-005056b0d930" timestamp="2026-01-13T07:58:31" senderIdentifier="362df8" senderRole="1" external="true">
+        <PaymentsExportConditions xmlns="http://rnip.mos.ru/xsd/SearchConditions/2.6.0" kind="PAYMENT">
+          <PayersConditions>
+            <PayerIdentifier>2009725189960772501001</PayerIdentifier>
+            <TimeInterval xmlns="http://rnip.mos.ru/xsd/Common/2.6.0" startDate="2024-01-12T00:00:00.000" endDate="2026-01-12T23:59:59.000"/>
+            <KBKlist xmlns="http://rnip.mos.ru/xsd/Common/2.6.0">
+              <KBK>80910807082011000110</KBK>
+            </KBKlist>
+          </PayersConditions>
+        </PaymentsExportConditions>
+      </ExportPaymentsRequest>
+    </MessagePrimaryContent>
+    <Sender>
+      <Mnemonic>362df8</Mnemonic>
+    </Sender>
+  </SenderProvidedRequestData>
+  <Error>
+    <ErrorCode>0</ErrorCode>
+    <ErrorDescription>Получен результат по запросу #61cf4056-f03c-11f0-820e-005056b0d930 uuid# MessageId#b1bdaeac-af46-4798-8b27-73eb3d511456</ErrorDescription>
+  </Error>
+  <Signature>
+    <SerialNumber>19822921954230229906056720898925379045</SerialNumber>
+    <Publisher>Common Name: Федеральное казначейство; Organization: Казначейство России; Country: RU; Locality: г. Москва; Street Address: Большой Златоустинский переулок, д. 6, строение 1; 1.2.643.100.1: 1047797019830; 1.2.643.100.4: 7710568760; State/Province: 77 Москва; Email Address: uc_fk@roskazna.ru</Publisher>
+    <CustomPublisher>
+      <Element name="email_address">uc_fk@roskazna.ru</Element>
+      <Element name="state_or_province_name">77 Москва</Element>
+      <Element name="1.2.643.100.4">7710568760</Element>
+      <Element name="1.2.643.100.1">1047797019830</Element>
+      <Element name="street_address">Большой Златоустинский переулок, д. 6, строение 1</Element>
+      <Element name="locality_name">г. Москва</Element>
+      <Element name="country_name">RU</Element>
+      <Element name="organization_name">Казначейство России</Element>
+      <Element name="common_name">Федеральное казначейство</Element>
+    </CustomPublisher>
+    <Subject>Common Name: ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ; Email Address: msks87.gu@mos.ru; 1.2.643.100.4: 7710878000; 1.2.643.100.1: 1107746943347; Organization: ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ; Locality: Москва; Street Address: 1-й Красногвардейский проезд, дом 21, строение 1; State/Province: г. Москва; Country: RU</Subject>
+    <CustomSubject>
+      <Element name="country_name">RU</Element>
+      <Element name="state_or_province_name">г. Москва</Element>
+      <Element name="street_address">1-й Красногвардейский проезд, дом 21, строение 1</Element>
+      <Element name="locality_name">Москва</Element>
+      <Element name="organization_name">ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ</Element>
+      <Element name="1.2.643.100.1">1107746943347</Element>
+      <Element name="1.2.643.100.4">7710878000</Element>
+      <Element name="email_address">msks87.gu@mos.ru</Element>
+      <Element name="common_name">ДЕПАРТАМЕНТ ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ ГОРОДА МОСКВЫ</Element>
+    </CustomSubject>
+    <StartDate>2025-06-10 08:41:01+00:00</StartDate>
+    <EndDate>2026-09-03 08:41:01+00:00</EndDate>
+  </Signature>
+</Response>

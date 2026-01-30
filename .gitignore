@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+.idea/
+.vscode/
+*.log
+expertise_result_sample.json
+.streamlit/
